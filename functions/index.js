@@ -13,7 +13,12 @@ app.get("/test", (req, res) => {
 app.get("/another-one", (req, res) => {
   res.send("This one works, too!");
 });
-fdfddfdf
+
+app.delete('/delete-one', (req,res) => {
+    Array.splice(3,1)
+})
+
+
 app.post('/add-one', (req, res) => {
     res.send('add this one as well')
 })
